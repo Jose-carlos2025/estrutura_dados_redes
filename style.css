@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('https://phoenixnap.com/glossary/wp-content/uploads/2024/03/what-is-a-network-database.jpg');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+header {
+    background-color: rgba(76, 175, 80, 0.8); /* Cor de fundo com transparência */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px; /* Aumenta a margem entre os cards */
+    padding: 20px; /* Aumenta o padding interno */
+    width: 300px; /* Aumenta a largura dos quadrados */
+    height: 200px; /* Aumenta a altura dos quadrados */
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Efeito de transição */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espaça o conteúdo dentro do card */
+}
+
+.card h2 {
+    font-size: 1.5em; /* Aumenta o tamanho do título */
+    margin: 0; /* Remove margem do título */
+}
+
+.card p {
+    font-size: 1em; /* Aumenta o tamanho do texto */
+    margin: 0; /* Remove margem do texto */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
+    background-color: rgba(255, 255, 255, 0.8); /* Aumenta a opacidade ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(241, 241, 241, 0.9);
+}
+
+/* Estilo do Modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro com transparência */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
